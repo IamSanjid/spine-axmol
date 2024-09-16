@@ -38,7 +38,7 @@ namespace spine {
 	}
 }
 
-USING_NS_AX;
+using namespace ax;
 
 backend::SamplerAddressMode wrap (spAtlasWrap wrap) {
 	return wrap == SP_ATLAS_CLAMPTOEDGE ? backend::SamplerAddressMode::CLAMP_TO_EDGE : backend::SamplerAddressMode::REPEAT;

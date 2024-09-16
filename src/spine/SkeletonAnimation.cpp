@@ -33,7 +33,7 @@
 #include <spine/extension.h>
 #include <algorithm>
 
-USING_NS_AX;
+using namespace ax;
 using std::min;
 using std::max;
 using std::vector;

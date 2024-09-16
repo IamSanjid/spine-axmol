@@ -49,7 +49,7 @@ void ensureWorldVerticesCapacity(size_t capacity) {
         worldVerticesLength = capacity;
     }
 }
-USING_NS_CC;
+using namespace ax;
 
 namespace spine {
 
