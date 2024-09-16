@@ -66,6 +66,9 @@ namespace spine {
         void setDebugMeshesEnabled(bool enabled);
         bool getDebugMeshesEnabled() const;
 
+        void setDebugBoundingRectEnabled(bool enabled);
+        bool getDebugBoundingRectEnabled() const;
+
         // --- Convenience methods for common Skeleton_* functions.
         void updateWorldTransform();
 

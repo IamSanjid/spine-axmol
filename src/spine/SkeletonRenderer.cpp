@@ -656,7 +656,8 @@ namespace spine {
 
         if (_effect) _effect->end(_effect);
 
-        if (_debugSlots || _debugBones || _debugMeshes) {
+        if (_debugBoundingRect || _debugSlots || _debugBones || _debugMeshes)
+        {
             drawDebug(renderer, transform, transformFlags);
         }
     }
@@ -895,6 +896,13 @@ namespace spine {
     }
     bool SkeletonRenderer::getDebugMeshesEnabled() const {
         return _debugMeshes;
+    }
+
+    void SkeletonRenderer::setDebugBoundingRectEnabled(bool enabled) {
+        _debugBoundingRect = enabled;
+    }
+    bool SkeletonRenderer::getDebugBoundingRectEnabled() const {
+        return _debugBoundingRect;
     }
 
 

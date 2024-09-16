@@ -43,6 +43,21 @@
 #define AX_USE_SPINE_CPP 0
 
 namespace spine {
+    enum EventType
+    {
+        EventType_Start = spEventType::SP_ANIMATION_START,
+        EventType_Interrupt = spEventType::SP_ANIMATION_INTERRUPT,
+        EventType_End = spEventType::SP_ANIMATION_END,
+        EventType_Complete = spEventType::SP_ANIMATION_COMPLETE,
+        EventType_Dispose = spEventType::SP_ANIMATION_DISPOSE,
+        EventType_Event = spEventType::SP_ANIMATION_EVENT
+    };
+    using Event = spEvent;
+    using TrackEntry = spTrackEntry;
+    using Animation = spAnimation;
+    using Atlas = spAtlas;
+    using Skeleton = spSkeleton;
+    using SkeletonData = spSkeletonData;
 	typedef ax::Texture2D* (*CustomTextureLoader)(const char* path);
 	// set custom texture loader for _spAtlasPage_createTexture
 	void spAtlasPage_setCustomTextureLoader(CustomTextureLoader texLoader);
