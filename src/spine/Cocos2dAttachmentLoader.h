@@ -41,7 +41,7 @@ typedef struct Cocos2dAttachmentLoader {
 } Cocos2dAttachmentLoader;
 
 /* The Cocos2dAttachmentLoader must not be disposed until after the skeleton data has been disposed. */
-Cocos2dAttachmentLoader* Cocos2dAttachmentLoader_create (spAtlas* atlas);
+SP_API Cocos2dAttachmentLoader* Cocos2dAttachmentLoader_create (spAtlas* atlas);
 
 }
 
